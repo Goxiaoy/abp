@@ -59,7 +59,7 @@ ABP框架的主要目标之一就是提供[便捷的基础设施来创建微服�
 - 如果要在本地构建映像, 可以跳过上述步骤, 使用build命令:
 
   ```
-  docker-compose -f docker-compose.yml -f docker-compose.migrations.yml build
+  docker-compose -f docker-compose.yml -f docker-compose.migrations.yml build --parallel
   ```
 
   根据你的电脑配置, 构建image可能需要**很长时间**.

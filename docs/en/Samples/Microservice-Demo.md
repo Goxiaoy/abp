@@ -59,7 +59,7 @@ Running as docker containers is easier since all dependencies are pre-configured
 - If you want to build images locally you may skip the above step and instead use build command:
 
   ```
-  docker-compose -f docker-compose.yml -f docker-compose.migrations.yml build
+  docker-compose -f docker-compose.yml -f docker-compose.migrations.yml build --parallel
   ```
 
   Building images may take a **long time** depending on your machine.
