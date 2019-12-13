@@ -125,6 +125,14 @@ services:
     depends_on:
       - elasticsearch
       - public-website-gateway
+  
+  sw-oap:
+    image: apache/skywalking-oap-server:6.5.0
+
+  sw-ui:
+    image: apache/skywalking-ui:6.5.0
+    depends_on:      
+      - sw-oap 
 
 volumes:
   dbdata:

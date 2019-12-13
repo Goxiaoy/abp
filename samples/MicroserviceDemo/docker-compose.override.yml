@@ -184,3 +184,20 @@ services:
       - Redis__Configuration=redis
     ports:
       - 51513:80
+
+  sw-oap:
+    ports:      
+      - 11800:11800      
+      - 12800:12800
+    environment:
+      - SW_STORAGE=elasticsearch
+      - SW_STORAGE_ES_CLUSTER_NODES=elasticsearch:9200
+
+  sw-ui:
+    image: apache/skywalking-ui:6.5.0
+    depends_on:      
+      - sw-oap 
+    ports:      
+      - 8080:8080
+    environment:       
+      SW_OAP_ADDRESS: sw-oap:12800  
