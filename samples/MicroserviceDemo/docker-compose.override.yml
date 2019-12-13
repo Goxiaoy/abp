@@ -210,6 +210,8 @@ services:
     environment:
       - SW_STORAGE=elasticsearch
       - SW_STORAGE_ES_CLUSTER_NODES=elasticsearch:9200
+    env_file: 
+      - .env
 
   sw-ui:
     image: apache/skywalking-ui:6.5.0
@@ -218,4 +220,6 @@ services:
     ports:      
       - 8080:8080
     environment:       
-      SW_OAP_ADDRESS: sw-oap:12800  
+      - SW_OAP_ADDRESS=sw-oap:12800  
+    env_file: 
+      - .env
