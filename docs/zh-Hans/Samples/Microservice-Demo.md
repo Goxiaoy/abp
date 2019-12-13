@@ -70,6 +70,12 @@ ABP框架的主要目标之一就是提供[便捷的基础设施来创建微服�
   docker-compose -f docker-compose.yml -f docker-compose.migrations.yml run restore-database
   ```
 
+- 为 skywalking 更新 `.env` 文件的时区信息
+
+  ```
+  TZ=Asia/Shanghai
+  ```
+
 - 启动容器:
 
   ```

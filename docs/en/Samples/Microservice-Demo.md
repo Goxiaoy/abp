@@ -70,6 +70,12 @@ Running as docker containers is easier since all dependencies are pre-configured
   docker-compose -f docker-compose.yml -f docker-compose.migrations.yml run restore-database
   ```
 
+- Update timezone info in `.env` file for skywalking tracing:
+
+  ```
+  TZ='your timezone'
+  ```
+
 - Start the containers:
 
   ```
