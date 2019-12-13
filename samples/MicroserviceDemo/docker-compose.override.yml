@@ -48,6 +48,8 @@ services:
     environment:
       - ASPNETCORE_HOSTINGSTARTUPASSEMBLIES=SkyAPM.Agent.AspNetCore
       - SKYWALKING__SERVICENAME=internal-gateway
+      - SKYWALKING__TRANSPORT__GRPC__SERVERS=sw-oap:11800
+      - SKYWALKING__LOGGING__FILEPATH=Logs/SkyWalking-{Date}.log
       - ElasticSearch__Url=http://elasticsearch:9200
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=http://0.0.0.0:80
@@ -68,6 +70,8 @@ services:
     environment:
       - ASPNETCORE_HOSTINGSTARTUPASSEMBLIES=SkyAPM.Agent.AspNetCore
       - SKYWALKING__SERVICENAME=backend-admin-app-gateway
+      - SKYWALKING__TRANSPORT__GRPC__SERVERS=sw-oap:11800      
+      - SKYWALKING__LOGGING__FILEPATH=Logs/SkyWalking-{Date}.log
       - ElasticSearch__Url=http://elasticsearch:9200
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=http://0.0.0.0:80
@@ -87,6 +91,8 @@ services:
     environment:
       - ASPNETCORE_HOSTINGSTARTUPASSEMBLIES=SkyAPM.Agent.AspNetCore
       - SKYWALKING__SERVICENAME=public-website-gateway
+      - SKYWALKING__TRANSPORT__GRPC__SERVERS=sw-oap:11800
+      - SKYWALKING__LOGGING__FILEPATH=Logs/SkyWalking-{Date}.log
       - ElasticSearch__Url=http://elasticsearch:9200
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=http://0.0.0.0:80
@@ -105,6 +111,8 @@ services:
     environment:
       - ASPNETCORE_HOSTINGSTARTUPASSEMBLIES=SkyAPM.Agent.AspNetCore
       - SKYWALKING__SERVICENAME=blogging-service
+      - SKYWALKING__TRANSPORT__GRPC__SERVERS=sw-oap:11800
+      - SKYWALKING__LOGGING__FILEPATH=Logs/SkyWalking-{Date}.log
       - ElasticSearch__Url=http://elasticsearch:9200
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=http://0.0.0.0:80
@@ -121,6 +129,8 @@ services:
     environment:
       - ASPNETCORE_HOSTINGSTARTUPASSEMBLIES=SkyAPM.Agent.AspNetCore
       - SKYWALKING__SERVICENAME=identity-service
+      - SKYWALKING__TRANSPORT__GRPC__SERVERS=sw-oap:11800
+      - SKYWALKING__LOGGING__FILEPATH=Logs/SkyWalking-{Date}.log
       - ElasticSearch__Url=http://elasticsearch:9200
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=http://0.0.0.0:80
@@ -135,6 +145,8 @@ services:
     environment:
       - ASPNETCORE_HOSTINGSTARTUPASSEMBLIES=SkyAPM.Agent.AspNetCore
       - SKYWALKING__SERVICENAME=product-service
+      - SKYWALKING__TRANSPORT__GRPC__SERVERS=sw-oap:11800
+      - SKYWALKING__LOGGING__FILEPATH=Logs/SkyWalking-{Date}.log
       - ElasticSearch__Url=http://elasticsearch:9200
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=http://0.0.0.0:80
@@ -150,6 +162,8 @@ services:
     environment:
       - ASPNETCORE_HOSTINGSTARTUPASSEMBLIES=SkyAPM.Agent.AspNetCore
       - SKYWALKING__SERVICENAME=auth-server
+      - SKYWALKING__TRANSPORT__GRPC__SERVERS=sw-oap:11800
+      - SKYWALKING__LOGGING__FILEPATH=Logs/SkyWalking-{Date}.log
       - ElasticSearch__Url=http://elasticsearch:9200
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=http://0.0.0.0:51511
@@ -163,6 +177,8 @@ services:
     environment:
       - ASPNETCORE_HOSTINGSTARTUPASSEMBLIES=SkyAPM.Agent.AspNetCore
       - SKYWALKING__SERVICENAME=backend-admin-app
+      - SKYWALKING__TRANSPORT__GRPC__SERVERS=sw-oap:11800
+      - SKYWALKING__LOGGING__FILEPATH=Logs/SkyWalking-{Date}.log
       - ElasticSearch__Url=http://elasticsearch:9200
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=http://0.0.0.0:80
@@ -176,6 +192,8 @@ services:
     environment:
       - ASPNETCORE_HOSTINGSTARTUPASSEMBLIES=SkyAPM.Agent.AspNetCore
       - SKYWALKING__SERVICENAME=public-website
+      - SKYWALKING__TRANSPORT__GRPC__SERVERS=sw-oap:11800
+      - SKYWALKING__LOGGING__FILEPATH=Logs/SkyWalking-{Date}.log
       - ElasticSearch__Url=http://elasticsearch:9200
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=http://0.0.0.0:80
