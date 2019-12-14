@@ -102,6 +102,8 @@ There are a few applications running in the containers you may want to explore:
   *(Used as a single sign on and authentication server built with IdentityServer4)*
 * Kibana UI: `http://localhost:51510`
   *(Use to show/trace logs written by all services/applications/gateways)*
+* Skywalking UI: `http://localhost:8080`
+  *(Use to trace request and dependence between all services/applications/gateways)*
 
 ### Running From the Source Code
 
